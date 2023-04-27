@@ -6,29 +6,21 @@ import SearchPage from './pages/SearchPage';
 import Reviews from './pages/Reviews';
 import About from './pages/About';
 import ErrorPage from './pages/ErrorPage';
+import Nav from './components/Nav';
+
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <nav className='navbar'>
-          <Link to="/">Home</Link>
-          <Link to="/searchpage">Destinations</Link>
-          <Link to="/reviews">Reviews</Link>
-          <Link to="/about">About</Link>
-          <Link to="mailto:company@example.com">Support</Link>
-        </nav>
-
+      <Nav />
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/searchpage" element={<SearchPage/>}/>
+          <Route path="/searchpage" element={<SearchPage />}/>
           <Route path="/reviews" element={<Reviews/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
         <div className='footer'>Footer</div>
-      </Router>
-
     </div>
   );
 }

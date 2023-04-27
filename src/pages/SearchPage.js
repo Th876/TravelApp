@@ -1,5 +1,6 @@
 export default function SearchPage () {
-    return ( 
+ 
+   return ( 
         <div>
            <h1>THIS IS THE SEARCH PAGE</h1>
            <div className="wrapper">
