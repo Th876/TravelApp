@@ -1,28 +1,30 @@
 import {Link} from "react-router-dom";
+import logo from "../images/logo.png";
+import support from "../images/support.png";
 
-export default function Nav (props) {
+
+
+
+export default function Nav () {
     return (
-        <div className='nav'>
+        <div className='nav-container'>
             {/* Logo image below */}
-            {/* <img src={}/> */}
-            <Link to="/">
-                <div>Home</div>
-                </Link>
-                <Link to="/searchpage">
-                    <div>Destinations</div></Link>
+            <img src={logo} alt="logo" className="logo"/>
+            <div className="nav">
+            
+            <Link to="/">Home</Link>
+
+            <Link to="/searchpage">Destinations</Link>
                     
-                    <Link to="/reviews">
-                        <div>Reviews</div>
-                    </Link>
+            <Link to="/reviews">Reviews</Link>
                     
-                    <Link to="/about">
-                        <div>
-                        About
-                        </div>
-                        </Link>
-                        
-                        <Link to="mailto:company@example.com">
-                            <div>Support</div>
-                        </Link>
-                        </div>)
+            <Link to="/about">About</Link>
+        
+                   
+            <Link to="mailto:company@example.com">
+            <img src={support} alt="support logo" className="support"/>
+            </Link>
+            </div>
+            </div>
+            )
 };

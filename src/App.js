@@ -1,6 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } 
-from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage';
 import Reviews from './pages/Reviews';
@@ -20,7 +19,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
-        <div className='footer'>Footer</div>
+        <small className='footer'>Copyright ©2023, Designed by Tahaylia Higgins. All Rights Reserved</small>
     </div>
   );
 }

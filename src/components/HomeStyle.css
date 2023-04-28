@@ -1,0 +1,58 @@
+/* Center elements on homepage */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .home h1 {
+    position: relative;
+    margin-top: -90px;
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 0.3vw var(--black);
+  }
+  
+  .home h1::before {
+    content:attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--orange);
+    -webkit-text-stroke: 0vw var(--black);
+    border-right: 2px solid var(--orange);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%, 10%, 100% {
+      width: 0;
+    }
+  
+    70%, 90% {
+      width: 100%;
+    }
+  }
+  
+  .home-btn {
+    padding: 10px 25px;
+    font-size: 1.4rem;
+    border: 2px solid var(--orange);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .home-btn:hover {
+    color: var(--black);
+    background-color:  rgb(255, 255, 255, 0.3);
+  }
+  

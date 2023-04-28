@@ -1,3 +1,94 @@
-.App {
-  text-align: center;
+/* Fonts here*/
+
+/* Style for navbar, body and footer */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --orange: #f48c06;
+  --silver: #D6D9E2;
+  width: 100vw;
 }
+
+.App {
+  background-image: url(./images/mountains.jpg);
+  /* background-color: #CDE5FD; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  text-align: center;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.nav {
+  /* background-color: #CDE5FD; */
+  display: flex;
+  justify-content:flex-end;
+}
+
+.logo {
+  width: 5%;
+  margin-left: 50px;
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: -30px;
+}
+
+
+.nav a {
+  text-decoration: none;
+  position: relative;
+  padding: 0px 25px;
+  font-weight: bold;
+  color: var(--black);
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+
+/* Underline hover */
+.nav a::after {
+  content: '';
+  /* line width starts from zero and */
+  width: 0;
+  height: 5px;
+  position: absolute;
+  /* place line underneath nav links */
+  bottom: 0px;
+  left: 50%;
+  /* position line center */
+  transform: translateX(-50%);
+  background-color:var(--orange);
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  /* Line length */
+  width: 50%;
+}
+
+.support {
+  width: 34px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: var(--white);
+  text-align: center;
+  padding: 9px 0px 5px 0px;
+  margin-bottom: -15px;
+}
+
+
+
+
+
+
+
+
+
+
