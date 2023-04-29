@@ -1,17 +1,19 @@
+
 /* Fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300&family=Squada+One&display=swap');
 
 /* Style for navbar, body and footer */
 :root {
   --black: #000000;
   --white: #ffffff;
-  --orange: #f48c06;
+  --tangerine: #f48c06;
   --silver: #D6D9E2;
+  font-family: 'Open Sans', sans-serif;
   width: 100vw;
 }
 
 .App {
   background-image: url(./images/mountains.jpg);
-  /* background-color: #CDE5FD; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
@@ -24,15 +26,17 @@
 }
 
 .nav {
-  /* background-color: #CDE5FD; */
+  font-family: 'Squada One', cursive;
+  letter-spacing: 2px;
   display: flex;
   justify-content:flex-end;
 }
 
 .logo {
-  width: 5%;
-  margin-left: 50px;
-  margin-top: 10px;
+  width: 6%;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 15px;
   display: flex;
   margin-bottom: -30px;
 }
@@ -41,7 +45,7 @@
 .nav a {
   text-decoration: none;
   position: relative;
-  padding: 0px 25px;
+  padding: 0px 5px;
   font-weight: bold;
   color: var(--black);
   font-size: 1.5rem;
@@ -56,11 +60,11 @@
   height: 5px;
   position: absolute;
   /* place line underneath nav links */
-  bottom: 0px;
+  bottom: -3px;
   left: 50%;
   /* position line center */
   transform: translateX(-50%);
-  background-color:var(--orange);
+  background-color:var(--tangerine);
   transition: 0.3s;
 }
 
@@ -70,6 +74,7 @@
 }
 
 .support {
+  margin-top: -8px;
   width: 34px;
 }
 

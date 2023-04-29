@@ -6,7 +6,7 @@ function Home () {
         <div className="home">
            <h1 data-text="ESCAPE">ESCAPE</h1>
       
-           <Link to="./searchpage"><button className="home-btn">Start Here</button></Link>
+           <Link to="./bucketlist"><button className="home-btn">Start Here</button></Link>
         </div>
      );
 }

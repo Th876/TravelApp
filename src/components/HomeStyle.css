@@ -9,6 +9,7 @@
   }
   
   .home h1 {
+    font-family: 'Open Sans', sans-serif;
     position: relative;
     margin-top: -90px;
     font-size: 10rem;
@@ -23,9 +24,9 @@
     left: 0;
     width: 0;
     height: 100%;
-    color: var(--orange);
+    color: var(--tangerine);
     -webkit-text-stroke: 0vw var(--black);
-    border-right: 2px solid var(--orange);
+    border-right: 2px solid var(--tangerine);
     overflow: hidden;
     animation: animate 6s linear infinite;
   }
@@ -41,9 +42,10 @@
   }
   
   .home-btn {
+    font-family: 'Open Sans', sans-serif;
     padding: 10px 25px;
     font-size: 1.4rem;
-    border: 2px solid var(--orange);
+    border: 2px solid var(--tangerine);
     background-color: transparent;
     color: var(--white);
     font-size: 1.5rem;
