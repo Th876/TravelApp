@@ -1,17 +1,16 @@
-.about-container{
+.bucketlist-container {
     display: flex;
     flex-direction: column;
     background-color: var(--white);
-    /* background-image: url(../images/about-bkground.jpg); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    background-image: url(../images/about-bkground.jpg);
+    background-size: cover;
     height: 100vh;
     width: 100vw;
 
 }
 
-.about-container h1 {
-    color: var(--black);
+.bucketlist-container h1 {
+    color: var(--halfblack);
     margin-top: 50px;
     font-size: 2.5rem;
 }
@@ -22,10 +21,11 @@
 
 .quote-color {
     color: var(--tangerine);
+    font-size: 1.5rem;
 }
 
 button[type='submit'] {
-    margin-top: 10px;
+    margin-top: 50px;
     background-color: var(--tangerine);
     color: var(--white);
     border: none;
@@ -34,16 +34,52 @@ button[type='submit'] {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
-    transition: all 0.3s ease 0s;
 }
 
 button[type='submit']:hover {
-    background-color: var(--black);
+    background-color: var(--halfblack);
+    transition: all 0.3s ease 0s;
 }
+ 
+ .greeting {
+    padding-top: 50px;
+    margin-bottom: -40px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--halfblack);
+ }
 
+ .idea-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4px;
+    width: 350px;
+    height: 350px;
+ }
 
-/* <a href="https://www.freepik.com/free-vector/corporate-blank-orange-background-vector-business_34378556.htm#query=gray%20and%20orange%20backdrop&position=12&from_view=search&track=robertav1_2_sidr">Image by rawpixel.com</a> on Freepik */
+ .word-idea {
+    margin-top: 40px;
+    color: var(--halfblack);
+    font-size: 1.2rem;
+ }
 
-/* .generator-container { */
-/*  */
-/* } */
+ .generator-container {
+    border: 2px solid var(--black);
+    height: 750px;
+ }
+
+ .bucket {
+    margin-top: -10px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+ }
+
+ .refresh-btn {
+    cursor: pointer;
+    width: 80px;
+ }
+
+ .loading-icon {
+    width: 50px;
+ }

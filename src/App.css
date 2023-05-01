@@ -4,10 +4,12 @@
 
 /* Style for navbar, body and footer */
 :root {
+  --halfblack: #363636;
   --black: #000000;
   --white: #ffffff;
   --tangerine: #f48c06;
   --silver: #D6D9E2;
+  --mustard: #f3e1a2;
   font-family: 'Open Sans', sans-serif;
   width: 100vw;
 }

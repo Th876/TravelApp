@@ -8,7 +8,85 @@
     background-color: var(--silver);
 }
 
-.search h1 {
-    color: var(--white);
+.search-container h1 {
+    color: var(--halfblack);
     margin-top: 50px;
+    font-size: 2.5rem;
 }
+
+.search-container h2 {
+    color: var(--halfblack);
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: var(--white);
+  }
+  
+  thead {
+    font-size: 1.6rem;
+    text-align:left;
+  }
+  
+  th {
+    text-align: center;
+    color: var(--halfblack);
+  }
+  
+  td {
+    color: var(--tangerine);
+  }
+
+  th, tr, td {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #000000;
+    padding: 20px 40px 15px 40px;
+    }
+
+    label {
+        font-weight: bold;
+        color: var(--halfblack);
+        margin-right: 5px;
+        font-size: 1.1rem;
+    }
+.loadicon {
+    width: 5%;
+}
+
+.location-search-input {
+    padding: 10px 55px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.location-search-input::placeholder {
+    color: var(--halfblack);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.location-search-input:focus {
+    outline: 2px solid var(--tangerine);
+}
+
+/*     <div className="autocomplete-dropdown-container">
+      {loading && <div>Loading...</div>}
+      {suggestions.map(suggestion => {
+        const className = suggestion.active
+       // The item that the cursor is placed over will have a different color from the rest of items
+          ? 'suggestion-item--active'
+          : 'suggestion-item';
+        // inline style for demonstration purpose
+        const style = suggestion.active
+          ? { backgroundColor: 'blue', cursor: 'pointer' }
+          : { backgroundColor: '#ffffff', cursor: 'pointer' };
+        return (
+          <div
+            {...getSuggestionItemProps(suggestion, {
+              className,
+              style,
+            })}
+          >
+            <span>{suggestion.description}</span> */

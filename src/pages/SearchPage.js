@@ -25,10 +25,24 @@ export default function SearchPage () {
    return(
       <div className='search-container'>
          <h1>This is where it starts...</h1>
-         <p>Latitude: {coordinates.lat}</p>
-         <p>Longitude: {coordinates.lng}</p>
-         <p>Address: {place} </p>
-         
+         <h2>Address Lookup</h2>
+         <table>
+          <thead>
+            <tr>
+              <th>Latitude</th>
+              <th>Longitude</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>{coordinates.lat}</td>
+              <td>{coordinates.lng}</td>
+              <td>{place}</td>
+            </tr>
+          </tbody>
+         </table>         
       
       <PlacesAutocomplete
         value={place}
@@ -38,9 +52,10 @@ export default function SearchPage () {
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
          //the suggestions.descriptions change so need a key here
           <div key={suggestions.descriptions}>
+            <label>Search </label>
             <input
               {...getInputProps({
-                placeholder: 'Enter a Place ...',
+                placeholder: 'Enter the name of a place',
                 className: 'location-search-input',
               })}
             />
@@ -55,8 +70,8 @@ export default function SearchPage () {
                   : 'suggestion-item';
                 // inline style for demonstration purpose
                 const style = suggestion.active
-                  ? { backgroundColor: 'blue', cursor: 'pointer' }
-                  : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                  ? { backgroundColor: 'var(--tangerine)', width: '650px', marginLeft: 'auto', marginRight: 'auto', cursor: 'pointer' }
+                  : { backgroundColor: '#ffffff', cursor: 'pointer', width: '650px', marginLeft: 'auto', marginRight: 'auto'};
                 return (
                   <div
                     {...getSuggestionItemProps(suggestion, {
