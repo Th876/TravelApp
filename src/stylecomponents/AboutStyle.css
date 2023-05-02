@@ -1,0 +1,36 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    /* background-image: url("../image/gworld-map.svg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: top center; */
+    margin-top: 30px;
+}
+
+.about-container h1 {
+    color: var(--tangerine);
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.about-container strong {
+    color: var(--halfblack);
+    margin-top: -20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+.about-right {
+
+}

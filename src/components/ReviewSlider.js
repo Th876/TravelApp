@@ -4,7 +4,6 @@ import Carousel from 'react-elastic-carousel';
 import jennymaxwell from '../images/jennymaxwell.jpg';
 import johnallen from '../images/johnallen.jpg';
 import emmyjames from '../images/emmyjames.jpg';
-// import paulwilliams from '../images/paulwilliams.jpg';
 
 export default function ReviewSlider() {
   const [reviews, setReviews] = useState([
@@ -28,12 +27,6 @@ export default function ReviewSlider() {
         bucketlist: "See Killer Whales in the Wild",
         comment: "Really wanted to try something different after sitting at a desk job for 5 years. This is the excitement I was looking for!",
     },
-    // {
-        // image: paulwilliams,
-        // name: "Paul Williams",
-        // // bucketlist: "Raft along the Li River in Yangshuo.",
-        // // // // comment: "My year of 'yes' led me to trying JustGo travel and I’ve never made a better decision!",
-    // }
   ]);
 
   return (
