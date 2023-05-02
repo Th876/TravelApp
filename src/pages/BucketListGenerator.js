@@ -80,9 +80,15 @@ useEffect(() => {
          <div className='awards'>
             <h1>Awards &amp; Recognition</h1>
             <div className='grid-awards'>
-               <div className='card-award'><img src={bestbrandaward} alt='best brand award logo'/></div>
-               <div className='card-award'><img src={trustedaward} alt='trusted award logo'/></div>
-               <div className='card-award'><img src={premium} alt='premium award logo' className='premium'/></div>
+               <div className='card-award'><img src={bestbrandaward} alt='best brand award logo' className='best'/>
+               <p className='fordes'>Fordes 2020</p>
+               </div>
+               <div className='card-award'><img src={trustedaward} alt='trusted award logo'/>
+               <p>Cayak Annual Awards</p>
+               </div>
+               <div className='card-award'><img src={premium} alt='premium award logo' className='premium'/>
+               <p className='newyork'>New York Rimes</p>
+               </div>
             </div>
          </div>
         </div>

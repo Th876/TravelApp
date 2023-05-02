@@ -135,16 +135,30 @@ button[type='submit']:hover {
 
 .card-award {
    margin-top: 20px;
+   margin-bottom: -30px;
    padding-top: 35px;
-   background-color: #fffafa;
-   /* background-color: var(--halfblack); */
+   /* background-color: #fffafa; */
+   background-color: var(--halfblack);
    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
 }
 
+.best {
+  width: 230px;
+}
+.fordes {
+  margin-top: 28px;
+}
+.newyork {
+  margin-top: 24px;
+}
 .premium {
-  width: 150px;
+  margin-top: 10px;
+  width: 170px;
 }
 
+.card-award p {
+  color: var(--white);
+}
 .customer-image {
   width: 100px;
 }
