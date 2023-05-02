@@ -6,6 +6,8 @@
     width: 100vw;
     background-color: #fff;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-container h1 {
@@ -32,7 +34,6 @@
 
 .photo-grid {
     margin-top: -250px;
-    background-color: blue;
     width: 100%;
     display: grid;
     grid-column: span 2;
@@ -41,49 +42,46 @@
     grid-gap: 5px;
 }
 
-.yellow {
+.group1 {
+    margin-top: 65px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: span 2;
 }
 
-.yellow img {
+.group1 img {
     width: 360px;
 }
 
-.pink {
-    background-color: pink;
-    grid-column-start: 2;
-}
-
-.pink img {
+.group2 img {
     width: 500px;
 }
 
-.purple {
-    background-color: purple;
-}
 
-.purple img {
+.group3 img {
     width: 500px;
 }
 
-.white {
-    background-color: orange;
-}
 
-.white img {
+.group4 img {
     width: 500px;
 }
 
-.green {
-    background-color: green;
-}
-
-.green img {
+.group5 img {
     width: 500px;
 }
 
 .about-bottom {
-    background-color: red;
+    background-color: var(--halfblack);
+}
+
+.about-bottom h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    padding-top: 50px;
+    margin-bottom: 90px;
+}
+
+.partners-logo {
+    width: 80%;
 }
