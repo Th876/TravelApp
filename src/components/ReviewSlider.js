@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react';
 import BucketListStyle from '../stylecomponents/BucketListStyle.css';
 import Carousel from 'react-elastic-carousel';
+import jennymaxwell from '../images/jennymaxwell.jpg';
+import johnallen from '../images/johnallen.jpg';
 
 export default function ReviewSlider() {
   const [reviews, setReviews] = useState([
 
     {
-        image: "/images/jennymaxwell.jpg",
+        image: jennymaxwell,
         name: "Jenny Maxwell",
         bucketlist: "Hiked to Everest Base Camp",
         comment: "JustGo travel gave me and my husband the opportunity to be adventurous again. Definitely recommend!",
     },
     {
-        image: "../images/johnallen.jpg",
+        image: johnallen,
         name: "John Allen",
         bucketlist: "See the Aurora Australis",
         comment: "I’ve been going through a rough patch and just needed a change of scenery. My bestfriend told me about JustGo travel and I’m so glad! Best decision ever!",
@@ -37,7 +39,7 @@ export default function ReviewSlider() {
       {reviews.map((review, index) => {
         return (
             <div key={index}>
-                <img src={review.image} alt={review.name}/>
+                <img src={review.image} alt={review.name} className='customer-image'/>
                 <h3>{review.name}</h3>
                 <h4>{review.bucketlist}</h4>
                 <q className='quote'>{review.comment}</q>

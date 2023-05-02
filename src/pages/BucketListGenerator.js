@@ -7,7 +7,7 @@ import ReviewSlider from '../components/ReviewSlider';
 import scrolldown from '../images/scrolldown.gif';
 import bestbrandaward from '../images/bestbrandaward.png';
 import trustedaward from '../images/trustedaward.png';
-import  from '../images/.png';
+import  premium from '../images/premium.png';
 
 export default function BucketListGenerator () {
 //API ninja key: MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf
@@ -28,7 +28,7 @@ useEffect(() => {
     let getBucketList = async (e) => {
       e.preventDefault();
 
-      const API_KEY = process.env.REACT_APP_API_KEY;
+      const BUCKET_KEY = process.env.REACT_APP_BUCKET_API_KEY;
 
       const res = await fetch('https://api.api-ninjas.com/v1/bucketlist', 
       {
@@ -37,7 +37,7 @@ useEffect(() => {
       headers: { 
          'Content-Type': 'application/json',
 
-         'X-Api-Key': 'MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf'},
+         'X-Api-Key': `${BUCKET_KEY}`},
    })
 
    const data = await res.json();
@@ -82,7 +82,7 @@ useEffect(() => {
             <div className='grid-awards'>
                <div className='card-award'><img src={bestbrandaward} alt='best brand award logo'/></div>
                <div className='card-award'><img src={trustedaward} alt='trusted award logo'/></div>
-               <div className='card-award'><img src={} alt='premium award logo'/></div>
+               <div className='card-award'><img src={premium} alt='premium award logo' className='premium'/></div>
             </div>
          </div>
         </div>
