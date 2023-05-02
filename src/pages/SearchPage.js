@@ -3,7 +3,8 @@ import SearchStyle from '../stylecomponents/SearchStyle.css';
 import PlacesAutocomplete from 'react-places-autocomplete'
 import { geocodeByAddress, geocodeByPlaceId, getLatLng, } from 'react-places-autocomplete';
 import loadingicon from '../images/loadingicon.gif';
-import { FaSearch } from "react-icons/fa";
+import { FaSearch } from 'react-icons/fa';
+import refreshbtnsearch from '../images/refreshbtnsearch.png';
 
 
 export default function SearchPage () {
@@ -92,6 +93,9 @@ export default function SearchPage () {
           </div>
         )}
       </PlacesAutocomplete>
+      <div onClick={() => window.location.reload(true)}>
+      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search'/>  
+      </div> 
       </div>
    )
 }
