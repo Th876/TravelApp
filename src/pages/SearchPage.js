@@ -3,6 +3,7 @@ import SearchStyle from '../stylecomponents/SearchStyle.css';
 import PlacesAutocomplete from 'react-places-autocomplete'
 import { geocodeByAddress, geocodeByPlaceId, getLatLng, } from 'react-places-autocomplete';
 import loadingicon from '../images/loadingicon.gif';
+import { FaSearch } from "react-icons/fa";
 
 
 export default function SearchPage () {
@@ -53,13 +54,16 @@ export default function SearchPage () {
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
          //the suggestions.descriptions change so need a key here
           <div key={suggestions.descriptions}>
-            <label>Search </label>
+        
+            <div className='input-container'>
+            <FaSearch className='search-icon'/>
             <input
               {...getInputProps({
                 placeholder: 'Enter the name of a place',
                 className: 'location-search-input',
               })}
-            />
+             />
+             </div>
             <div className="autocomplete-dropdown-container">
               {loading && <img src={loadingicon} alt='loading icon' className='loadicon'/>}
 

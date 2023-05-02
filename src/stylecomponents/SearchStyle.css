@@ -61,18 +61,35 @@ table {
     width: 5%;
 }
 
+.input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .location-search-input {
-    padding: 10px 55px;
+    padding: 10px 65px;
     border: none;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .location-search-input::placeholder {
-    color: var(--halfblack);
+    color: var(--slate);
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.85rem;
 }
 
 .location-search-input:focus {
-    outline: 2px solid var(--tangerine);
+    outline: 3px solid var(--tangerine);
+}
+
+.search-icon {
+    position: absolute;
+    top: 26px;
+    left: 870px;
+    color: var(--tangerine);
+    opacity: 0.4;
+    font-size: 25px;
 }
