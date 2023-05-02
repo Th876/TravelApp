@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import BucketListStyle from '../components/BucketListStyle.css';
+import BucketListStyle from '../stylecomponents/BucketListStyle.css';
 import Greeting from '../components/Greeting';
 import bucket from '../images/bucket.png';
-import loadingicon from "../images/loadingicon.gif";
+import loadingicon from '../images/loadingicon.gif';
+import ReviewSlider from '../components/ReviewSlider';
 
 
 export default function BucketListGenerator () {
@@ -41,50 +42,35 @@ useEffect(() => {
    setIdea(data.item);
     }
 
-    //Contest instructions to participate
-    const challengeInstructions = [
-      {step: "Make a video diary of the entire process, i.e. from the moment you clicked the 'Explore Now' button to the moment you return home."},
-    
-    {step: "Express, in your video diary, what taking this challenge means to you." },
-    
-    {step: "Submit your entry to our instagram@travelhappy with the hashtag #HappyBucket"},
-
-    ];
-
-   // Bucket List challenge Terms and Conditions List
-   const challengeTerms = [
-      {title: "NO PURCHASE NECESSARY TO ENTER OR WIN."},
-   
-      {title: "ELIGIBILITY: Be a dare devil! Oh, and a legal resident of the United States."},
-   ]
-
-  
    return ( 
         <div className='bucketlist-container'>
 
          <div className='generator-container'>
+            <form>
+               <Greeting/>
+               <h1>Ready for a Daring Adventure?</h1>
 
-         <form>
-            <Greeting/>
-            <h1>Ready for a Daring Adventure?</h1>
-
-            <p className='quote'><i className='quote-color'>"Don’t kick it, tick it"</i>&mdash; Bucket List by JustGo travel</p>
+               <p className='quote'><i className='quote-color'>"Don’t kick it, tick it"</i>&mdash; Bucket List by JustGo travel</p>
          
-            <button type='submit' onClick={getBucketList}  onClickCapture={showBucket}>Explore Now</button>
-            <div className='idea-container'>
-               <h3 className='word-idea'>{idea}</h3>
+               <button type='submit' onClick={getBucketList}  onClickCapture={showBucket}>Explore Now</button>
+               <div className='idea-container'>
+                  <h3 className='word-idea'>{idea}</h3>
 
                {/* Does the image from useState exist? Then show bucket that was imported at the top of page */}
-               {image &&  
+                  {image &&  
             
-            <div onClick={() => window.location.reload(true)}><img src={bucket} alt="yellow bucket" className='bucket'/>
+               <div onClick={() => window.location.reload(true)}><img src={bucket} alt="yellow bucket" className='bucket'/>
             </div>
             }
-
             </div>
-            
          </form>
-        
+         </div>
+
+         <div className='reviews-container'>
+         <h1>See What Our Customers Are Saying!</h1>
+            <div className='card'>
+               <ReviewSlider /></div>
+           
          </div>
         </div>
      );

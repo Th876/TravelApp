@@ -1,12 +1,15 @@
+/* Bucket List Section */
 .bucketlist-container {
-    display: flex;
-    flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+    /* display: flex; */
+    /* flex-direction: column; */
     background-color: var(--white);
     background-image: url(../images/about-bkground.jpg);
     background-size: cover;
     height: 100vh;
     width: 100vw;
-
 }
 
 .bucketlist-container h1 {
@@ -63,11 +66,6 @@ button[type='submit']:hover {
     font-size: 1.2rem;
  }
 
- .generator-container {
-    border: 2px solid var(--black);
-    height: 750px;
- }
-
  .bucket {
     margin-top: -10px;
     width: 250px;
@@ -83,3 +81,35 @@ button[type='submit']:hover {
  .loading-icon {
     width: 50px;
  }
+
+ /*------------------ Review Section -------------------*/
+
+ .reviews-container {
+   background-color: var(--halfblack);
+   height: 100vh;
+ }
+
+ .reviews-container h1{
+   color: var(--white);
+ }
+ .reviews-container h2 {
+   font-size: 2.2rem;
+   color: var(--halfblack);
+ }
+
+ .card {
+   color: var(--white);
+   padding: 30px 20px 20px 30px;
+   padding-left: 30px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 750px;
+   height: 250px;
+   background-color: var(--deeporange);
+      /* background-color: #f2f2f2; */
+ }
+
+ .quote {
+   font-style: italic;
+ }
+

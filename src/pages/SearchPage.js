@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SearchStyle from '../components/SearchStyle.css';
+import SearchStyle from '../stylecomponents/SearchStyle.css';
 import PlacesAutocomplete from 'react-places-autocomplete'
 import { geocodeByAddress, geocodeByPlaceId, getLatLng, } from 'react-places-autocomplete';
 
@@ -68,7 +68,7 @@ export default function SearchPage () {
                // The item that the cursor is placed over will have a different color from the rest of items.
                   ? 'suggestion-item--active'
                   : 'suggestion-item';
-                // inline style for demonstration purpose
+              
                 const style = suggestion.active
                   ? { backgroundColor: 'var(--tangerine)', width: '650px', marginLeft: 'auto', marginRight: 'auto', cursor: 'pointer' }
                   : { backgroundColor: '#ffffff', cursor: 'pointer', width: '650px', marginLeft: 'auto', marginRight: 'auto'};
