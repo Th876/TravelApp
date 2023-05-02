@@ -25,7 +25,7 @@ export default function SearchPage () {
    }
    return(
       <div className='search-container'>
-         <h1>It Really Starts here...</h1>
+         <h1>It Really Starts here</h1>
          <h2>Address Lookup</h2>
          <table>
           <thead>

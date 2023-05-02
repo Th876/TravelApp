@@ -26,7 +26,7 @@ useEffect(() => {
     let getBucketList = async (e) => {
       e.preventDefault();
 
-      // const BUCKET_KEY = process.env.REACT_APP_BUCKET_API_KEY;
+      const BUCKET_KEY = process.env.REACT_APP_BUCKET_API_KEY;
 
       const res = await fetch('https://api.api-ninjas.com/v1/bucketlist', 
       {
@@ -34,10 +34,8 @@ useEffect(() => {
       
       headers: { 
          'Content-Type': 'application/json',
-//MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf
-
-      'X-Api-Key': "MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf"},
-         // 'X-Api-Key': `${BUCKET_KEY}`},
+      
+         'X-Api-Key': BUCKET_KEY},
    })
 
    const data = await res.json();
