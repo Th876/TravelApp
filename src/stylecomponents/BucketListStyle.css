@@ -8,6 +8,7 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    margin-top: 30px;
 }
 
 .bucketlist-container h1 {
@@ -103,7 +104,7 @@ button[type='submit']:hover {
    margin-right: auto;
    margin-left: auto;
    width: 750px;
-   height: 270px;
+   height: 450px;
    background-color: var(--deeporange);
  }
 
@@ -112,8 +113,8 @@ button[type='submit']:hover {
  }
 
  .scrolldown-arrow {
-   margin-top: 60px;
-   width: 80px;
+   margin-top: 40px;
+   width: 40px;
  }
 
  .awards {
@@ -151,6 +152,7 @@ button[type='submit']:hover {
 .newyork {
   margin-top: 24px;
 }
+
 .premium {
   margin-top: 10px;
   width: 170px;
@@ -159,6 +161,9 @@ button[type='submit']:hover {
 .card-award p {
   color: var(--white);
 }
+
 .customer-image {
-  width: 100px;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
 }

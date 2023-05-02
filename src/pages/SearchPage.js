@@ -2,6 +2,7 @@ import { useState } from 'react';
 import SearchStyle from '../stylecomponents/SearchStyle.css';
 import PlacesAutocomplete from 'react-places-autocomplete'
 import { geocodeByAddress, geocodeByPlaceId, getLatLng, } from 'react-places-autocomplete';
+import loadingicon from '../images/loadingicon.gif';
 
 
 export default function SearchPage () {
@@ -24,7 +25,7 @@ export default function SearchPage () {
    }
    return(
       <div className='search-container'>
-         <h1>This is where it starts...</h1>
+         <h1>It Really Starts here...</h1>
          <h2>Address Lookup</h2>
          <table>
           <thead>
@@ -60,7 +61,7 @@ export default function SearchPage () {
               })}
             />
             <div className="autocomplete-dropdown-container">
-              {loading && <div>Loading...</div>}
+              {loading && <img src={loadingicon} alt='loading icon' className='loadicon'/>}
 
               {/* Map through data */}
               {suggestions.map(suggestion => {

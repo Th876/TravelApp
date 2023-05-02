@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import BucketListStyle from '../stylecomponents/BucketListStyle.css';
 import Greeting from '../components/Greeting';
 import bucket from '../images/bucket.png';
-import loadingicon from '../images/loadingicon.gif';
 import ReviewSlider from '../components/ReviewSlider';
 import scrolldown from '../images/scrolldown.gif';
 import bestbrandaward from '../images/bestbrandaward.png';
@@ -10,7 +9,7 @@ import trustedaward from '../images/trustedaward.png';
 import  premium from '../images/premium.png';
 
 export default function BucketListGenerator () {
-//API ninja key: MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf
+
    //anything the user types gets set inside query
    const [idea, setIdea] = useState('');
    const [image, setImage] = useState(false);  
@@ -28,7 +27,7 @@ useEffect(() => {
     let getBucketList = async (e) => {
       e.preventDefault();
 
-      const BUCKET_KEY = process.env.REACT_APP_BUCKET_API_KEY;
+      // const BUCKET_KEY = process.env.REACT_APP_BUCKET_API_KEY;
 
       const res = await fetch('https://api.api-ninjas.com/v1/bucketlist', 
       {
@@ -36,8 +35,10 @@ useEffect(() => {
       
       headers: { 
          'Content-Type': 'application/json',
+//MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf
 
-         'X-Api-Key': `${BUCKET_KEY}`},
+      'X-Api-Key': "MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf"},
+         // 'X-Api-Key': `${BUCKET_KEY}`},
    })
 
    const data = await res.json();
@@ -95,10 +96,4 @@ useEffect(() => {
      );
 }
 
-/* 
- <h2>Bucket List Challenge</h2>
- <h2>Terms and Conditions</h2>
- 
-  {/* Map through challengeTerms list of how to 
-}*/
 // Fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 

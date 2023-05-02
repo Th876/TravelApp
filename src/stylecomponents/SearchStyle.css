@@ -1,11 +1,12 @@
 .search-container{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     height: 100vh;
     width: 100vw;
-    background-color: var(--silver);
+    /* background-color: var(--silver); */
+    background-image: url("../images/worldmap.jpg");
+    background-position: top;
+    margin-top: 30px;
 }
 
 .search-container h1 {
@@ -51,6 +52,7 @@ table {
         margin-right: 5px;
         font-size: 1.1rem;
     }
+
 .loadicon {
     width: 5%;
 }
@@ -70,23 +72,3 @@ table {
 .location-search-input:focus {
     outline: 2px solid var(--tangerine);
 }
-
-/*     <div className="autocomplete-dropdown-container">
-      {loading && <div>Loading...</div>}
-      {suggestions.map(suggestion => {
-        const className = suggestion.active
-       // The item that the cursor is placed over will have a different color from the rest of items
-          ? 'suggestion-item--active'
-          : 'suggestion-item';
-        // inline style for demonstration purpose
-        const style = suggestion.active
-          ? { backgroundColor: 'blue', cursor: 'pointer' }
-          : { backgroundColor: '#ffffff', cursor: 'pointer' };
-        return (
-          <div
-            {...getSuggestionItemProps(suggestion, {
-              className,
-              style,
-            })}
-          >
-            <span>{suggestion.description}</span> */
