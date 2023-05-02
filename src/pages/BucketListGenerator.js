@@ -4,7 +4,10 @@ import Greeting from '../components/Greeting';
 import bucket from '../images/bucket.png';
 import loadingicon from '../images/loadingicon.gif';
 import ReviewSlider from '../components/ReviewSlider';
-
+import scrolldown from '../images/scrolldown.gif';
+import bestbrandaward from '../images/bestbrandaward.png';
+import trustedaward from '../images/trustedaward.png';
+import  from '../images/.png';
 
 export default function BucketListGenerator () {
 //API ninja key: MbLwE3pabae3/a63tK6rmA==3c9pVk8icJmzz1Qf
@@ -69,8 +72,18 @@ useEffect(() => {
          <div className='reviews-container'>
          <h1>See What Our Customers Are Saying!</h1>
             <div className='card'>
-               <ReviewSlider /></div>
-           
+               <ReviewSlider />
+            </div>
+            <img src={scrolldown} alt='three scroll down arrows' className='scrolldown-arrow'/>
+         </div>
+
+         <div className='awards'>
+            <h1>Awards &amp; Recognition</h1>
+            <div className='grid-awards'>
+               <div className='card-award'><img src={bestbrandaward} alt='best brand award logo'/></div>
+               <div className='card-award'><img src={trustedaward} alt='trusted award logo'/></div>
+               <div className='card-award'><img src={} alt='premium award logo'/></div>
+            </div>
          </div>
         </div>
      );

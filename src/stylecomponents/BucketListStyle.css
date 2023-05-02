@@ -2,7 +2,7 @@
 .bucketlist-container {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
     /* display: flex; */
     /* flex-direction: column; */
     background-color: var(--white);
@@ -98,18 +98,47 @@ button[type='submit']:hover {
  }
 
  .card {
+   margin-top: 70px;
    color: var(--white);
    padding: 30px 20px 20px 30px;
    padding-left: 30px;
    margin-right: auto;
    margin-left: auto;
    width: 750px;
-   height: 250px;
+   height: 270px;
    background-color: var(--deeporange);
-      /* background-color: #f2f2f2; */
  }
 
  .quote {
    font-style: italic;
  }
 
+ .scrolldown-arrow {
+   margin-top: 60px;
+   width: 80px;
+ }
+
+ .awards {
+   background-image: url(../images/about-bkground-flipped.jpg);
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .grid-awards {
+   display: grid;
+   grid-template-columns: 300px 300px 300px;
+   grid-template-rows: 250px;
+   grid-gap: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 80px;
+ }
+
+.card-award {
+   margin-top: 20px;
+   padding-top: 35px;
+   background-color: #fffafa;
+   /* background-color: var(--halfblack); */
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
+}
