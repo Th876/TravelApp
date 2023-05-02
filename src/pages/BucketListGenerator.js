@@ -3,7 +3,6 @@ import BucketListStyle from '../stylecomponents/BucketListStyle.css';
 import Greeting from '../components/Greeting';
 import bucket from '../images/bucket.png';
 import ReviewSlider from '../components/ReviewSlider';
-import scrolldown from '../images/scrolldown.gif';
 import bestbrandaward from '../images/bestbrandaward.png';
 import trustedaward from '../images/trustedaward.png';
 import  premium from '../images/premium.png';
@@ -75,7 +74,6 @@ useEffect(() => {
             <div className='card'>
                <ReviewSlider />
             </div>
-            <img src={scrolldown} alt='three scroll down arrows' className='scrolldown-arrow'/>
          </div>
 
          <div className='awards'>
