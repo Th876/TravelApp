@@ -138,7 +138,6 @@ button[type='submit']:hover {
    margin-top: 20px;
    margin-bottom: -30px;
    padding-top: 35px;
-   /* background-color: #fffafa; */
    background-color: var(--halfblack);
    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
 }

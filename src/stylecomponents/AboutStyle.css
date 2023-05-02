@@ -1,13 +1,10 @@
 .about-container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     height: 100vh;
     width: 100vw;
     background-color: #fff;
-    /* background-image: url("../image/gworld-map.svg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: top center; */
     margin-top: 30px;
 }
 
@@ -19,18 +16,74 @@
 
 .about-container strong {
     color: var(--halfblack);
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
-.about-grid {
+.about-text-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 30px;
     margin-top: 30px;
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 80px;
 }
-.about-right {
 
+.photo-grid {
+    margin-top: -250px;
+    background-color: blue;
+    width: 100%;
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.yellow {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: span 2;
+}
+
+.yellow img {
+    width: 360px;
+}
+
+.pink {
+    background-color: pink;
+    grid-column-start: 2;
+}
+
+.pink img {
+    width: 500px;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.purple img {
+    width: 500px;
+}
+
+.white {
+    background-color: orange;
+}
+
+.white img {
+    width: 500px;
+}
+
+.green {
+    background-color: green;
+}
+
+.green img {
+    width: 500px;
+}
+
+.about-bottom {
+    background-color: red;
 }
