@@ -1,3 +1,14 @@
+![Heading](./travelappclip1.gif)
+
+<p> JustGo Travel is the second project I created at <a href="https://perscholas.org/courses/software-engineer/software-engineer-atlanta/">Per Scholas'</a> Software Engineer Training using React.js. This is a fictitious website that focused on travel and utilizes the Fetch method and UseEffect hook to make a request to Google Maps' Places Autocomplete API and API Ninja's Bucket List. This is the <a href= "https://travelapp-f8sm.onrender.com/">live link</a> for my React Application.</p>
+<hr></hr>
+
+<h3>Application Features</h3>
+
+<p>The homepage, features a navigation menu bar that creates an orange underline when users hover over a specific navigation link. At the center of the homepage is the start button that leads users to the Bucket List Generator page. 
+  
+  the 'Start Game' button is disabled, which prompts the user to enter a name in order to play. As the user types a name, a warning message is displayed to ensure that an acceptable name format is given. What is not accepted is colored red and what is accepted is colored green. This name is later displayed on the quiz page as, for example, 'Player: Anna'.</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
