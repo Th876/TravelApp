@@ -57,7 +57,7 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
 <hr></hr>
 
 <h3>Wireframe</h3>
-<img src="/Wireframe-ReadMe.png">
+<img src="/wireframe.png">
 
 <hr></hr>
 <h3>Challenges</h3>
