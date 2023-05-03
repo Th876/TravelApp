@@ -42,15 +42,33 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
   <li><a href=https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a></li>
   <li><a href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a></li>
   <li><a href="https://www.flaticon.com/">Flaticon</a></li>
-  <li><a href="https://www.freeconvert.com/video-compressor 
-">Freeconvert</a></li>
+  <li><a href="https://www.freeconvert.com/video-compressor">Freeconvert</a></li>
   <li><a href="https://www.npmjs.com/package/pack">Npm Packages</a></li>
   <li><https://www.freepik.com/">Freepik</a></li>
-  <li><a href="https://www.pngegg.com/">PNGEGG</a></li>  
+  <li><a href="https://www.pexels.com/">Pexels</a></li>  
+  <li><a href="https://tenor.com/">Tenor</a></li> 
  </ul>
+ 
+<hr></hr>
+
+<h3>Planning Process</h3>
+<p>Google docs was used to jot down ideas for this project. My wireframe was designed via Figma. The website's colors were sourced on Coolors; and animations were created via Adobe Photoshop and Illustrator, and some were sourced on Freepik.</p>
 
 <hr></hr>
-# Getting Started with Create React App
+
+<h3>Wireframe</h3>
+<img src="/Wireframe-ReadMe.png">
+
+<hr></hr>
+<h3>Challenges</h3>
+<ul>
+<li>Sourcing an API that works, and does not require credit card payment</li>
+<li>Linking images to display in the browser via the map method</li>
+<li></li>
+</ul>
+
+<hr></hr>
+<h3>Getting Started with Create React App</h3>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
