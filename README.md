@@ -1,6 +1,6 @@
 ![Heading](./travelappclip1.gif)
 
-<p> JustGo Travel is the second project I created at <a href="https://perscholas.org/courses/software-engineer/software-engineer-atlanta/">Per Scholas'</a> Software Engineer Training using React.js. This is a fictitious website that focused on travel and utilizes the Fetch method and UseEffect hook to make a request to Google Maps' Places Autocomplete API and <a href= "https://api-ninjas.com/api/bucketlist">API Ninja's Bucket List</a>. This is the <a href= "https://travelapp-f8sm.onrender.com/">live link</a> for my React Application.</p>
+<p> JustGo Travel is the second project I created at <a href="https://perscholas.org/courses/software-engineer/software-engineer-atlanta/">Per Scholas'</a> Software Engineer Training using React.js. This is a fictitious website that focused on travel and utilizes the Fetch method and UseEffect hook to make a request to <a href= "https://developers.google.com/maps/documentation/places/web-service">Google Maps' Places Autocomplete API</a> and <a href= "https://api-ninjas.com/api/bucketlist">API Ninja's Bucket List</a>. This is the <a href= "https://travelapp-f8sm.onrender.com/">live link</a> for my React Application.</p>
 <hr></hr>
 
 <h3>Application Features</h3>
@@ -17,14 +17,39 @@ At the center of the homepage is the start button that leads users to the Bucket
 
 In addition, as the user begins to scroll 500 pixels away from the top of the page, a back to the top button is triggered so that users can use this shortcut, if needs be. This back to the top button is the JustGo Travel logo.</p>
 
-<p>When users scroll downward, they are able to view the the customer reviews' section which is presented as a carousel with left and right arrows for direction; and beneath the reviews' carousel is the company's awards and recoginition. This is displayed as a grid of three columns and the names of the fictitious companies (those that honored JustGo Travel) are included below. </p>
+<p>When users scroll downward, they are able to view the the customer reviews' section which is presented as a carousel with left and right arrows for direction. This carousel was created using an npm <a href="https://www.npmjs.com/package/react-elastic-carousel?activeTab=readme">react-elastic-carousel</a> package. Beneath the reviews' carousel is the company's awards and recoginition. This is displayed as a grid of three columns and the names of the fictitious companies (those that honored JustGo Travel) are included below. </p>
 
 <h4>Google Maps' Places Autocomplete Data Source</h4>
 
-<p>This page consists of an Address Lookup feature in which users are able to type in a name of a place, anywhere in the world, and the table above the text input bar displays the latitude and longitude, as well as the address of the place. This was made possible by Google Maps places library which features a utility function to geocode and receive the latitude and longitude via Google Map's Geocoder API. Also, one can easily refresh their search by clicking the 'refresh search' button below the input bar.</p>
+<p>This page consists of an Address Lookup feature in which users are able to type in a name of a place, anywhere in the world, and the table above the text input bar displays the latitude and longitude, as well as the address of the place. This was made possible by <a href= "https://www.npmjs.com/pack">Google Maps places library</a> which features a utility function to geocode and receive the latitude and longitude via Google Map's Geocoder API. Also, one can easily refresh their search by clicking the 'refresh search' button below the input bar.</p>
 
-<p>To create this feature, I had to install the react places autocomplete </p>
+<p>The About navigation menu leads the users to a summary of the company's history. These paragraphs are placeholder text created by a <a href= "https://www.lipsum.com/">Lorem ipsum generator</a>. This page also features a photo grid layout of the employees at JustGo Travel and a section dedicated to partners of the company</p>
+<hr></hr>
 
+<h3>Technologies used:</h3>
+ <ul>
+  <li>Scripting/Programming languages: <a href="https://react.dev/learn/writing-markup-with-jsx">JSX</a> and <a href="https://react.dev/">React.js</a>
+  <li><a href="https://developer.chrome.com/docs/devtools/open/">Chrome DevTools</a></li>
+  <li><a href= "https://developers.google.com/maps/documentation/places/web-service">Google Maps' Places Autocomplete API</a></li>
+  <li><a href= "https://api-ninjas.com/api/bucketlist">API Ninja's Bucket List</a></li>
+  <li><a href="https://render.com/">Render</a></li>
+  <li><a href="https://www.figma.com/">Figma</a></li>
+  <li><a href="https://docs.google.com/">Google Docs</a></li>
+  <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+  <li><a href="https://github.com/">GitHub</a></li>
+  <li><a href="https://coolors.co/">Coolors</a></li>
+  <li><a href="https://www.lipsum.com/">Lorem Ipsum</a></li>
+  <li><a href=https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a></li>
+  <li><a href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a></li>
+  <li><a href="https://www.flaticon.com/">Flaticon</a></li>
+  <li><a href="https://www.freeconvert.com/video-compressor 
+">Freeconvert</a></li>
+  <li><a href="https://www.npmjs.com/package/pack">Npm Packages</a></li>
+  <li><https://www.freepik.com/">Freepik</a></li>
+  <li><a href="https://www.pngegg.com/">PNGEGG</a></li>  
+ </ul>
+
+<hr></hr>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
