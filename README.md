@@ -19,7 +19,7 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
 
 <p>When users scroll downward, they are able to view the the customer reviews' section which is presented as a carousel with left and right arrows for direction. This carousel was created using an npm <a href="https://www.npmjs.com/package/react-elastic-carousel?activeTab=readme">react-elastic-carousel</a> package. Beneath the reviews' carousel is the company's awards and recoginition. This is displayed as a grid of three columns and the names of the fictitious companies (those that honored JustGo Travel) are included below. </p>
 
-<h4>Google Maps' Places Autocomplete Data Source</h4>
+<h4>Google Maps Places Autocomplete Data Source</h4>
 
 <p>This page consists of an Address Lookup feature in which users are able to type in a name of a place, anywhere in the world, and the table above the text input bar displays the latitude and longitude, as well as the address of the place. This was made possible by <a href= "https://www.npmjs.com/pack">Google Maps places library</a> which features a utility function to geocode and receive the latitude and longitude via Google Map's Geocoder API. Also, one can easily refresh their search by clicking the 'refresh search' button below the input bar.</p>
 
