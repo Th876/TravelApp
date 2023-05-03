@@ -28,7 +28,7 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
 
 <h3>Technologies used:</h3>
  <ul>
-  <li>Scripting/Programming languages: <a href="https://react.dev/learn/writing-markup-with-jsx">JSX</a> and <a href="https://react.dev/">React.js</a>
+  <li>React Library: <a href="https://react.dev/learn/writing-markup-with-jsx">JSX</a> and <a href="https://react.dev/">React.js</a>
   <li><a href="https://developer.chrome.com/docs/devtools/open/">Chrome DevTools</a></li>
   <li><a href= "https://developers.google.com/maps/documentation/places/web-service">Google Maps' Places Autocomplete API</a></li>
   <li><a href= "https://api-ninjas.com/api/bucketlist">API Ninja's Bucket List</a></li>
