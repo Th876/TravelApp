@@ -1,5 +1,6 @@
 /* Bucket List Section */
 .bucketlist-container {
+  position: relative;
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr 1fr;
@@ -11,6 +12,15 @@
     margin-top: 30px;
 }
 
+.happytraveler {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  margin-top: 0px;
+  width: 450px;
+  margin-left: -590px;
+ }
+ 
 .bucketlist-container h1 {
     color: var(--halfblack);
     margin-top: 50px;

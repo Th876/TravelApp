@@ -6,6 +6,7 @@ import ReviewSlider from '../components/ReviewSlider';
 import bestbrandaward from '../images/bestbrandaward.png';
 import trustedaward from '../images/trustedaward.png';
 import  premium from '../images/premium.png';
+import happytraveler from '../images/happytraveler.png';
 import BackToTop from '../components/BackToTop';
 
 export default function BucketListGenerator () {
@@ -66,6 +67,8 @@ useEffect(() => {
             }
             </div>
          </form>
+         
+         <img src={happytraveler} alt='Happy traveler' className='happytraveler'/>
          </div>
 
          <div className='reviews-container'>
