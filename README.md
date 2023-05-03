@@ -9,6 +9,8 @@
 
 At the center of the homepage is the start button that leads users to the Bucket List Generator page. This page consists of three parts: Bucket List Generator, customer reviews, and the JustGo Travel's accolades.</p>
 
+<h4>API Ninjas Data Source</h4>
+
 <p>The first words on this page is a greeting to the user. There are several greeting options, namely, 'Good morning traveler', 'Good afternoon traveler', 'Good evening traveler', and 'Good night traveler'. The user is greeted with the greeting specific to their local time.</p>
 
 <p>The heading prompts the user to be adventurous and click the 'Explore Now' button so that they can receive a bucklet list idea. This feature returns a random bucket list idea from <a href= "https://api-ninjas.com/api/bucketlist">API Ninjas</a>. When the user clicks the button, a yellow bucket appears on-screen and the idea is loaded above it. The bucket also consists of a button called, 'more adventure' which gives the user the opportunity to refresh the page, click the 'Explore Now' button again for another random bucket list idea. <br>
@@ -16,6 +18,10 @@ At the center of the homepage is the start button that leads users to the Bucket
 In addition, as the user begins to scroll 500 pixels away from the top of the page, a back to the top button is triggered so that users can use this shortcut, if needs be. This back to the top button is the JustGo Travel logo.</p>
 
 <p>When users scroll downward, they are able to view the the customer reviews' section which is presented as a carousel with left and right arrows for direction; and beneath the reviews' carousel is the company's awards and recoginition. This is displayed as a grid of three columns and the names of the fictitious companies (those that honored JustGo Travel) are included below. </p>
+
+<h4>Google Maps' Places Autocomplete Data Source</h4>
+
+<p>This page consists of an Address Lookup feature in which users are able to type in a name of a place, anywhere in the world, and the table above the text input bar displays the latitude and longitude, as well as the address of the place. One can find a 'refresh search' button below the input bar.</p>
 
 # Getting Started with Create React App
 
