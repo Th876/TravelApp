@@ -93,6 +93,7 @@ useEffect(() => {
             </div>
          </div>
          <BackToTop />
+         <small className='footer'>Copyright ©2023, Designed by Tahaylia Higgins. All Rights Reserved</small>
         </div>
      );
 }

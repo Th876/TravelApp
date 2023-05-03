@@ -27,13 +27,11 @@ function About () {
                <div className='group3'><img src={group3} alt='coworkers looking at a written around a desk'/></div>
                <div className='group5'><img src={group5} alt='coworkers huddling their hands together'/></div>
             </div>
-
          </div>
 
             <div className='about-bottom'>
                <h2>Our Partners</h2>
                <img src={partnerslogos} alt="JustGo Travel partners' logo" className='partners-logo'/>
-
                <BackToTop />
             </div>
           </div>

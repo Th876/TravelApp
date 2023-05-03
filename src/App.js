@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
-        {/* <small className='footer'>Copyright ©2023, Designed by Tahaylia Higgins. All Rights Reserved</small> */}
+        <small className='footer'>Copyright ©2023, Designed by Tahaylia Higgins. All Rights Reserved</small>
     </div>
   );
 }

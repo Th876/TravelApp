@@ -29,6 +29,8 @@
   flex-direction: column;
   margin-left: -10px;
   margin-right: -10px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .nav {
@@ -84,15 +86,15 @@
   width: 34px;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #000000;
-  color: var(--white);
-  text-align: center;
-  padding: 9px 0px 5px 0px;
+/* .footer { */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* background-color: #000000; */
+  /* color: var(--white); */
+  /* text-align: center; */
+  /* padding: 9px 0px 5px 0px; */
   /* margin-bottom: -15px; */
-}
+/* } */
 
 
 
