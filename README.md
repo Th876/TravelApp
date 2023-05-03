@@ -5,11 +5,17 @@
 
 <h3>Application Features</h3>
 
-<p>The homepage features a navigation menu bar that creates an orange underline when users hover over a specific navigation link. At the center of the homepage is the start button that leads users to the Bucket List Generator page.</p>
+<p>The homepage features a navigation menu bar that creates an orange underline when users hover over a specific navigation link. In the far right corner is the support link, represented by a '24/7' headset icon. When clicked, this opens up the default email client suggesting that the user may receive support by sending an email to the 'mailto' link address.<br> 
+
+At the center of the homepage is the start button that leads users to the Bucket List Generator page. This page consists of three parts: Bucket List Generator, customer reviews, and the JustGo Travel's accolades.</p>
 
 <p>The first words on this page is a greeting to the user. There are several greeting options, namely, 'Good morning traveler', 'Good afternoon traveler', 'Good evening traveler', and 'Good night traveler'. The user is greeted with the greeting specific to their local time.</p>
 
-<p>The heading prompts the user to be adventurous and click the 'Explore Now' button so that they can receive a bucklet list idea. This feature returns a random bucket list idea from <a href= "https://api-ninjas.com/api/bucketlist">API Ninjas</a></p>
+<p>The heading prompts the user to be adventurous and click the 'Explore Now' button so that they can receive a bucklet list idea. This feature returns a random bucket list idea from <a href= "https://api-ninjas.com/api/bucketlist">API Ninjas</a>. When the user clicks the button, a yellow bucket appears on-screen and the idea is loaded above it. The bucket also consists of a button called, 'more adventure' which gives the user the opportunity to refresh the page, click the 'Explore Now' button again for another random bucket list idea. <br>
+
+In addition, as the user begins to scroll 500 pixels away from the top of the page, a back to the top button is triggered so that users can use this shortcut, if needs be. This back to the top button is the JustGo Travel logo.</p>
+
+<p>When users scroll downward, they are able to view the the customer reviews' section which is presented as a carousel with left and right arrows for direction; and beneath the reviews' carousel is the company's awards and recoginition. This is displayed as a grid of three columns and the names of the fictitious companies (those that honored JustGo Travel) are included below. </p>
 
 # Getting Started with Create React App
 
