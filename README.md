@@ -44,7 +44,7 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
   <li><a href="https://www.flaticon.com/">Flaticon</a></li>
   <li><a href="https://www.freeconvert.com/video-compressor">Freeconvert</a></li>
   <li><a href="https://www.npmjs.com/package/pack">Npm Packages</a></li>
-  <li><https://www.freepik.com/">Freepik</a></li>
+  <li><a href="https://www.freepik.com/">Freepik</a></li>
   <li><a href="https://www.pexels.com/">Pexels</a></li>  
   <li><a href="https://tenor.com/">Tenor</a></li> 
  </ul>
