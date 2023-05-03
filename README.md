@@ -21,7 +21,9 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
 
 <h4>Google Maps' Places Autocomplete Data Source</h4>
 
-<p>This page consists of an Address Lookup feature in which users are able to type in a name of a place, anywhere in the world, and the table above the text input bar displays the latitude and longitude, as well as the address of the place. One can find a 'refresh search' button below the input bar.</p>
+<p>This page consists of an Address Lookup feature in which users are able to type in a name of a place, anywhere in the world, and the table above the text input bar displays the latitude and longitude, as well as the address of the place. This was made possible by Google Maps places library which features a utility function to geocode and receive the latitude and longitude via Google Map's Geocoder API. Also, one can easily refresh their search by clicking the 'refresh search' button below the input bar.</p>
+
+<p>To create this feature, I had to install the react places autocomplete </p>
 
 # Getting Started with Create React App
 
