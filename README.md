@@ -5,9 +5,9 @@
 
 <h3>Application Features</h3>
 
-<p>The homepage, features a navigation menu bar that creates an orange underline when users hover over a specific navigation link. At the center of the homepage is the start button that leads users to the Bucket List Generator page. 
-  
-  the 'Start Game' button is disabled, which prompts the user to enter a name in order to play. As the user types a name, a warning message is displayed to ensure that an acceptable name format is given. What is not accepted is colored red and what is accepted is colored green. This name is later displayed on the quiz page as, for example, 'Player: Anna'.</p>
+<p>The homepage features a navigation menu bar that creates an orange underline when users hover over a specific navigation link. At the center of the homepage is the start button that leads users to the Bucket List Generator page.</p>
+
+<p>The first words on this page is a greeting to the user. There are several greeting options, namely, 'Good morning traveler', 'Good afternoon traveler', 'Good evening traveler', and 'Good night traveler'. The user is greeted with the greeting specific to their local time.</p>
 
 # Getting Started with Create React App
 
