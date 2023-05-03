@@ -1,3 +1,6 @@
+* {
+    scroll-behavior: smooth;
+}
 .about-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -84,4 +87,13 @@
 
 .partners-logo {
     width: 80%;
+}
+
+.to-top-btn {
+    cursor: pointer;
+    position: fixed;
+    scroll-behavior: smooth;
+    bottom: 70px;
+    right: 30px;
+    width: 100px;
 }

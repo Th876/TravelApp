@@ -5,6 +5,7 @@ import group3 from '../images/group3.jpg';
 import group4 from '../images/group4.jpg';
 import group5 from '../images/group5.jpg';
 import partnerslogos from '../images/partnerslogos.svg'; 
+import BackToTop from '../components/BackToTop';
 
 function About () {
    return ( 
@@ -33,7 +34,7 @@ function About () {
                <h2>Our Partners</h2>
                <img src={partnerslogos} alt="JustGo Travel partners' logo" className='partners-logo'/>
 
-               {/* Insert logos here! */}
+               <BackToTop />
             </div>
           </div>
        </div>

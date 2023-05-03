@@ -6,6 +6,7 @@ import ReviewSlider from '../components/ReviewSlider';
 import bestbrandaward from '../images/bestbrandaward.png';
 import trustedaward from '../images/trustedaward.png';
 import  premium from '../images/premium.png';
+import BackToTop from '../components/BackToTop';
 
 export default function BucketListGenerator () {
 
@@ -88,6 +89,7 @@ useEffect(() => {
                </div>
             </div>
          </div>
+         <BackToTop />
         </div>
      );
 }
