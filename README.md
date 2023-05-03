@@ -64,7 +64,6 @@ In addition, as the user begins to scroll 500 pixels away from the top of the pa
 <ul>
 <li>Sourcing an API that works, and does not require credit card payment</li>
 <li>Linking images to display in the browser via the map method</li>
-<li></li>
 </ul>
 
 <hr></hr>
