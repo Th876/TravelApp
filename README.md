@@ -1,6 +1,6 @@
 ![Heading](./travelappclip1.gif)
 
-<p> JustGo Travel is the second project I created at <a href="https://perscholas.org/courses/software-engineer/software-engineer-atlanta/">Per Scholas'</a> Software Engineer Training using React.js. This is a fictitious website that focused on travel and utilizes the Fetch method and UseEffect hook to make a request to Google Maps' Places Autocomplete API and API Ninja's Bucket List. This is the <a href= "https://travelapp-f8sm.onrender.com/">live link</a> for my React Application.</p>
+<p> JustGo Travel is the second project I created at <a href="https://perscholas.org/courses/software-engineer/software-engineer-atlanta/">Per Scholas'</a> Software Engineer Training using React.js. This is a fictitious website that focused on travel and utilizes the Fetch method and UseEffect hook to make a request to Google Maps' Places Autocomplete API and <a href= "https://api-ninjas.com/api/bucketlist">API Ninja's Bucket List</a>. This is the <a href= "https://travelapp-f8sm.onrender.com/">live link</a> for my React Application.</p>
 <hr></hr>
 
 <h3>Application Features</h3>
@@ -8,6 +8,8 @@
 <p>The homepage features a navigation menu bar that creates an orange underline when users hover over a specific navigation link. At the center of the homepage is the start button that leads users to the Bucket List Generator page.</p>
 
 <p>The first words on this page is a greeting to the user. There are several greeting options, namely, 'Good morning traveler', 'Good afternoon traveler', 'Good evening traveler', and 'Good night traveler'. The user is greeted with the greeting specific to their local time.</p>
+
+<p>The heading prompts the user to be adventurous and click the 'Explore Now' button so that they can receive a bucklet list idea. This feature returns a random bucket list idea from <a href= "https://api-ninjas.com/api/bucketlist">API Ninjas</a></p>
 
 # Getting Started with Create React App
 
