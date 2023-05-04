@@ -63,7 +63,7 @@ useEffect(() => {
                   {image &&  
             
             // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-               <div onClick={() => window.location.reload(true)}><img src={bucket} alt="yellow bucket" className='bucket'/>
+               <div onClick={() => {window.location.href = window.location.href;}}><img src={bucket} alt="yellow bucket" className='bucket'/>
             </div>
             }
             </div>

@@ -96,7 +96,7 @@ export default function SearchPage () {
       </PlacesAutocomplete>
 
       {/* ⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */}
-      <div onClick={() => window.location.reload(true)}>
+      <div onClick={() => {window.location.href = window.location.href;}}>
       <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search'/>  
       </div> 
       </div>
