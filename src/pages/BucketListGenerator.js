@@ -45,12 +45,6 @@ useEffect(() => {
    setIdea(data.item);
     }
 
-    function ReloadPage() {
-      useEffect(() => {
-         window.location.reload();
-      }, []);
-    }
-
    return ( 
         <div className='bucketlist-container'>
 
@@ -68,7 +62,7 @@ useEffect(() => {
                {/* Does the image from useState exist? Then show bucket that was imported at the top of page */}
                   {image &&  
             
-               <div onClick={ReloadPage}><img src={bucket} alt="yellow bucket" className='bucket'/>
+               <div onClick={() => window.location.reload(true)}><img src={bucket} alt="yellow bucket" className='bucket'/>
             </div>
             }
             </div>

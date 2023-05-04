@@ -10,10 +10,15 @@ import refreshbtnsearch from '../images/refreshbtnsearch.png';
 export default function SearchPage () {
 
    const [place, setPlace] = useState();
+   const [emptyTable, setEmptyTable] = useState([]);
    const [coordinates, setCoordinates] = useState({
       lat: null,
       lng: null,
    })
+
+   function ReloadPage() {
+    setEmptyTable([]);
+  }
 
    const handleChoice = async value => {
       // pass in the address value and return the results 
@@ -93,7 +98,7 @@ export default function SearchPage () {
           </div>
         )}
       </PlacesAutocomplete>
-      <div onClick={() => window.location.reload(true)}>
+      <div onClick={ReloadPage()}>
       <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search'/>  
       </div> 
       </div>
