@@ -16,10 +16,6 @@ export default function SearchPage () {
       lng: null,
    })
 
-   function ReloadPage() {
-    setEmptyTable([]);
-  }
-
    const handleChoice = async value => {
       // pass in the address value and return the results 
       const res = await geocodeByAddress(value);
@@ -30,6 +26,11 @@ export default function SearchPage () {
       setPlace(value);
       setCoordinates(latLong);
    }
+
+   function ReloadPage() {
+    setEmptyTable([]);
+  }
+
    return(
       <div className='search-container'>
          <h1>It Really Starts here</h1>
@@ -98,9 +99,8 @@ export default function SearchPage () {
           </div>
         )}
       </PlacesAutocomplete>
-      <div onClick={ReloadPage()}>
-      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search'/>  
-      </div> 
+    
+      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search' onClick={ReloadPage}/>   
       </div>
    )
 }
