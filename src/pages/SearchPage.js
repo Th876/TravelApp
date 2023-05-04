@@ -97,7 +97,7 @@ export default function SearchPage () {
 
       {/* ⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */}
       <div onClick={() => window.location.reload(true)}>
-      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search' onClick={ReloadPage}/>  
+      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search'/>  
       </div> 
       </div>
    )
