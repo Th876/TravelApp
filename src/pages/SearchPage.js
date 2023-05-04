@@ -10,7 +10,6 @@ import refreshbtnsearch from '../images/refreshbtnsearch.png';
 export default function SearchPage () {
 
    const [place, setPlace] = useState();
-   const [emptyTable, setEmptyTable] = useState([]);
    const [coordinates, setCoordinates] = useState({
       lat: null,
       lng: null,
@@ -26,11 +25,7 @@ export default function SearchPage () {
       setPlace(value);
       setCoordinates(latLong);
    }
-
-   function ReloadPage() {
-    setEmptyTable([]);
-  }
-
+   
    return(
       <div className='search-container'>
          <h1>It Really Starts here</h1>
@@ -99,8 +94,11 @@ export default function SearchPage () {
           </div>
         )}
       </PlacesAutocomplete>
-    
-      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search' onClick={ReloadPage}/>   
+
+      {/* ⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */}
+      <div onClick={() => window.location.reload(true)}>
+      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search' onClick={ReloadPage}/>  
+      </div> 
       </div>
    )
 }

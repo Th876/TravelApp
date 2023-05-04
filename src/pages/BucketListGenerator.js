@@ -62,6 +62,7 @@ useEffect(() => {
                {/* Does the image from useState exist? Then show bucket that was imported at the top of page */}
                   {image &&  
             
+            // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️
                <div onClick={() => window.location.reload(true)}><img src={bucket} alt="yellow bucket" className='bucket'/>
             </div>
             }
