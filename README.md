@@ -1,4 +1,4 @@
-![Heading](./travelappclip1.gif)
+![Heading](./travelapprepo.png)
 
 <p> JustGo Travel is the second project I created at <a href="https://perscholas.org/courses/software-engineer/software-engineer-atlanta/">Per Scholas'</a> Software Engineer Training using React.js. This is a fictitious website that focuses on travel and utilizes the Fetch method and UseEffect hook to make a request to <a href= "https://developers.google.com/maps/documentation/places/web-service">Google Maps' Places Autocomplete API</a> and <a href= "https://api-ninjas.com/api/bucketlist">API Ninja's Bucket List</a>. This is the <a href= "https://travelapp-f8sm.onrender.com/">live link</a> for my React Application.</p>
 <hr></hr>
