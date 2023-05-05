@@ -5,6 +5,7 @@
 /* Style for navbar, body and footer */
 :root {
   --halfblack: #363636;
+  --noir: #1A1A1A;
   --black: #000000;
   --white: #ffffff;
   --tangerine: #f48c06;
@@ -86,15 +87,6 @@
   width: 34px;
 }
 
-/* .footer { */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* background-color: #000000; */
-  /* color: var(--white); */
-  /* text-align: center; */
-  /* padding: 9px 0px 5px 0px; */
-  /* margin-bottom: -15px; */
-/* } */
 
 
 

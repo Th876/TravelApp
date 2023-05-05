@@ -19,8 +19,6 @@
   margin-top: 0px;
   width: 450px;
   margin-left: -590px;
-  /* ⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */
-  z-index: -1;
  }
  
 .bucketlist-container h1 {
@@ -48,7 +46,6 @@ button[type='submit'] {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
-    z-index: 10;
 }
 
 button[type='submit']:hover {
@@ -111,7 +108,7 @@ button[type='submit']:hover {
 
  .card {
    margin-top: 70px;
-   color: var(--white);
+   color: var(--noir);
    padding: 30px 20px 20px 30px;
    padding-left: 30px;
    margin-right: auto;
@@ -129,6 +126,35 @@ button[type='submit']:hover {
    margin-top: 40px;
    width: 40px;
  }
+
+ .customer-image {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Change carousel arrow background colors */
+ button.sc-bgqQcB.cjzNGz.rec.rec-arrow.rec.rec-arrow-right {
+  background-color: var(--halfblack);
+  color: var(--white);
+ }
+
+ button.sc-bgqQcB.cjzNGz.rec.rec-arrow.rec.rec-arrow-left {
+  background-color: var(--halfblack);
+ color: var(--white);
+}
+
+/* Change carousel non-active dots */
+button.sc-gxYJeL.jrqawY.rec.rec-dot {
+  background-color: transparent;
+}
+
+/* Change carousel active dot */
+button.sc-gxYJeL.eVXyLj.rec.rec-dot.rec.rec-dot_active {
+  background-color: var(--halfblack);
+  box-shadow: var(--silver) 0px 0px 1px 3px;
+}
+
 
  .awards {
    background-image: url(../images/about-bkground-flipped.jpg);
@@ -174,8 +200,3 @@ button[type='submit']:hover {
   color: var(--white);
 }
 
-.customer-image {
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
-}

@@ -4,7 +4,6 @@ import PlacesAutocomplete from 'react-places-autocomplete'
 import { geocodeByAddress, geocodeByPlaceId, getLatLng, } from 'react-places-autocomplete';
 import loadingicon from '../images/loadingicon.gif';
 import { FaSearch } from 'react-icons/fa';
-import refreshbtnsearch from '../images/refreshbtnsearch.png';
 
 
 export default function SearchPage () {
@@ -95,10 +94,6 @@ export default function SearchPage () {
         )}
       </PlacesAutocomplete>
 
-      {/* ⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */}
-      <div onClick={() => {window.location.href = window.location.href;}}>
-      <img src={refreshbtnsearch} alt='refresh search icon' className='refresh-search'/>  
-      </div> 
       </div>
    )
 }
