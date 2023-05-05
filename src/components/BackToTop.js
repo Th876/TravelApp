@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import topbutton from '../images/topbutton.png';
+import topbtn from '../images/topbtn.svg';
 
 export default function BackToTop () {
 
@@ -21,7 +21,7 @@ export default function BackToTop () {
     return (
         <div>
             {topBtn && (
-                <img src={topbutton} alt='Back to top button' 
+                <img src={topbtn} alt='Back to top button' 
                 className='to-top-btn' onClick={Scroll}/>
             )}
             
